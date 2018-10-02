@@ -92,8 +92,6 @@ function vimp() {
 export EDITOR=vim
 export VISUAL=vim
 export PATH=$PATH:~/.myScript
-export MACINJOKE=~/.ghq/github.com/MACINJOKE
-export VARIOUS=$MACINJOKE/various
 export ICLOUD=~/Library/Mobile\ Documents
 
 # node project path setting

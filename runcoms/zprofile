@@ -26,6 +26,14 @@ export PAGER='less'
 #
 
 if [[ -z "$LANG" ]]; then
+  expor tLANGUAGE=en_US.UTF-8
+  export LC_ALL=en_US.UTF-8
+  export LC_CTYPE=en_US.UTF-8
+  export LANG=en_US.UTF-8
+  export LANGUAGE=ja_JP.UTF-8
+  export LC_ALL=ja_JP.UTF-8
+  export LC_CTYPE=ja_JP.UTF-8
+  export LANG=ja_JP.UTF-8
   export LANG='en_US.UTF-8'
 fi
 
@@ -46,6 +54,26 @@ path=(
   /usr/local/{bin,sbin}
   $path
 )
+
+case ${OSTYPE} in
+    darwin*)
+    export ZPLUG_HOME=/usr/local/opt/zplug
+    source $ZPLUG_HOME/init.zsh
+        ;;
+    linux-gnu*)
+        source $HOME/.zplug/init.zsh
+        ;;
+esac
+export PYENV_ROOT="$HOME/.pyenv"
+#export PYENV_ROOT="usr/local/opt/pyenv
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+HISTFILE=~/.zsh_history
+HISTSIZE=1000000
+SAVEHIST=1000000
+
 
 #
 # Less

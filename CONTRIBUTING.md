@@ -20,7 +20,7 @@ improve its performance, do not hesitate to fork and send pull requests.
    - Write [good commit messages][3].
    - Squash commits on the topic branch before opening a pull request.
    - Use the same coding style and spacing.
-   - Open a [pull request][4] that relates to but one subject with a clear
+`   - Open a [pull request][4] that relates to but one subject with a clear
      title and description in grammatically correct, complete sentences.
 
 #### Code Style
